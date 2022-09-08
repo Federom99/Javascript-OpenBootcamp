@@ -37,3 +37,21 @@ while (true) {
     if (num2 === 1) break
 }
 console.log(factorial3) 
+
+let texto = "hoy es un dia, hoy es otro. hoy comi, hoy"
+
+console.log("la palabra se repite",texto.match(/hoy/g),"veces")
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+let nombre = "Fede"
+let apellido = "Romero"
+let estudiante = nombre.concat("").concat(apellido)
+let estudianteMayus = estudiante.toUpperCase()
+let estudianteMinus = estudiante.toLowerCase()
+const estudianteLength = estudiante.length
+let nombrePartido = nombre.slice(0,1)
+let apellidoPartido = apellido[apellido.length-1]
+const estudianteSinEspacios = estudiante.replace(/ /g, "")
+const nombreEnEstudiante = estudiante.includes(nombre)
