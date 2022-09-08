@@ -55,3 +55,15 @@ let nombrePartido = nombre.slice(0,1)
 let apellidoPartido = apellido[apellido.length-1]
 const estudianteSinEspacios = estudiante.replace(/ /g, "")
 const nombreEnEstudiante = estudiante.includes(nombre)
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+const altura_cm = 179
+const altura_m = 1.79
+const peso_kg = 80.2
+
+const altura_red = Math.ceil(altura_m)
+const peso_red = Math.floor(peso_kg)
+
+const sonIguales = Number.MAX_VALUE + 1 === Number.MAX_VALUE
