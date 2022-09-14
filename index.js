@@ -67,3 +67,38 @@ const altura_red = Math.ceil(altura_m)
 const peso_red = Math.floor(peso_kg)
 
 const sonIguales = Number.MAX_VALUE + 1 === Number.MAX_VALUE
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+const listaSuper = ["leche", "queso", "manteca", "harina"]
+listaSuper.push("aceite de girasol")
+listaSuper.pop()
+
+
+const peliculas = [ {
+  titulo: "asdasd",
+  director: "bgb",
+  fecha: 2001,
+
+  },
+  { titulo: "asdasdf",
+  director: "bgbw",
+  fecha: 2020,},
+ { titulo: "asdasda",
+ director: "bgbh",
+ fecha: 2011,},
+ 
+   ]
+
+const nuevasPeliculas = peliculas.filter(p=>p.fecha>2010 )
+console.log(nuevasPeliculas)
+
+const director = peliculas.map(d=>d.director)
+console.log(director)
+
+const titulos = peliculas.map(t=>t.titulo)
+console.log(titulos)
+
+const directores_titulos = director.concat(titulos)
+const directores_titulos_prop = [...director, ...titulos]
+
