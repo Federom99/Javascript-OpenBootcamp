@@ -93,10 +93,38 @@ const directores_titulos_prop = [...director, ...titulos];
 ////////////////////////////////////////////////////////////////////////////////////////////
 
 
-const mySet = new Set()
-mySet.add("federico")
-mySet.add("nancy")
-mySet.add("alejandro")
+const mySet = new Set(["federico", "nancy", "alejandro"])
 mySet.add("federico")
 mySet.add("javascript")
 console.log(mySet)
+
+
+const yo = {
+  nombre: "federico",
+  apellido: "romero",
+  edad: 23,
+  altura: 1.80,
+  eresDesarrollador: true
+}
+
+const edad = yo.edad
+
+const lista2 = [
+  {
+      ...yo
+  },{
+      nombre: "Joaco",
+      apellido: "Girardi",
+      edad: 21,
+      altura: 180,
+      eresDesarrollador: true
+  },{
+      nombre: "Ludmila",
+      apellido: "Paredes",
+      edad: 19,
+      altura: 165,
+      eresDesarrollador: false
+  }
+]
+
+const listaOrdenada = lista2.sort((a, b) => b.edad - a.edad)
