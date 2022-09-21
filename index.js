@@ -227,3 +227,18 @@ boton.addEventListener("click", () => alert("click en el botón"))
 $("button").click(function() {
     console.log("Hola, estoy utilizando jQuery")
 })
+
+////////////////////////////////////////////////////////////////////////////////////////////
+const name = "Fede"
+const surname = "Romero"
+
+const datos = {
+    name,
+    surname
+}
+
+// sessionStorage.setItem("datos", JSON.stringify(datos))
+// localStorage.setItem("datos", JSON.stringify(datos))
+
+const now = new Date()
+// document.cookie = `datos=${JSON.stringify(datos)};expires=${new Date(now.getTime() + 2 * 60000)}`
