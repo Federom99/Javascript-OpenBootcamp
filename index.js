@@ -188,3 +188,22 @@ import { suma, multiplica } from "./controller.js"
 import chalk from "chalk"
 
 console.log(chalk.green(multiplica(suma(1, 2), suma(4, 5))))
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
+class Estudiante {
+  nombre = "Fede"
+  asignaturas = ["Javascript", "HTML", "CSS"]
+
+  obtenDatos() {
+      return {
+          nombre: this.nombre,
+          asignaturas: this.asignaturas
+      }
+  }
+}
+
+const estudiantee = new Estudiante()
+
+console.log(estudiantee.obtenDatos())
