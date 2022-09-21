@@ -217,3 +217,13 @@ function nFibonacci(n) {
   return nFibonacci (n-1) + nFibonacci (n-2);
 
 }
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+let boton = document.querySelector("button")
+
+boton.addEventListener("click", () => alert("click en el botón"))
+
+$("button").click(function() {
+    console.log("Hola, estoy utilizando jQuery")
+})
