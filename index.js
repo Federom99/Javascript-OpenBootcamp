@@ -207,3 +207,13 @@ class Estudiante {
 const estudiantee = new Estudiante()
 
 console.log(estudiantee.obtenDatos())
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+function nFibonacci(n) {
+ 
+  
+  if (n>=0 && n<2) return n;
+  return nFibonacci (n-1) + nFibonacci (n-2);
+
+}
