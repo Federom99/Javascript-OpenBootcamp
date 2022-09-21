@@ -139,3 +139,21 @@ const comparacionFecha = hoy > nacimiento
 const diaNacimiento = nacimiento.getDate()
 const mesNacimiento = nacimiento.getMonth() + 1
 const anyoNacimiento = nacimiento.getFullYear()
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+
+function noParams(){
+  return true
+}
+
+async function promesaCincoSeg() {
+  return setTimeout(() => console.log("Hola soy una promesa"), 5000)
+}
+
+function* ids() {
+  let id = 0
+  while(true) {
+      yield id += 2
+  }
+}
